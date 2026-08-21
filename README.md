@@ -1,5 +1,7 @@
 # iris-skills
 
+[![skills.sh](https://skills.sh/b/freelabel/iris-skills)](https://skills.sh/freelabel/iris-skills)
+
 Agent skills from the [IRIS](https://heyiris.io) platform team — the ones that are useful
 outside our own codebase.
 
