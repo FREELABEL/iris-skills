@@ -10,7 +10,6 @@ allowed-tools:
   - Task
 ---
 
-> Run this playbook: `iris playbook run architecture-review `
 # Architecture Review — Pre-Implementation Analysis Skill
 
 Run a structured architectural analysis on a proposed technical change **before** writing any code. The goal is to catch design flaws, security holes, scaling limits, and migration gaps upfront.

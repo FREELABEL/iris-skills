@@ -11,7 +11,6 @@ allowed-tools:
   - Agent
 ---
 
-> Run this playbook: `iris playbook run stress-test `
 # Stress Test — Break It Before Clients Do
 
 Generate and execute edge case batteries against CLI commands, API endpoints, and database writes. The goal is to find bugs through adversarial input, boundary conditions, and unexpected usage patterns — the same things real users will do accidentally.

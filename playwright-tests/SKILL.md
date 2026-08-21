@@ -11,7 +11,6 @@ allowed-tools:
   - Task
 ---
 
-> Run this playbook: `iris playbook run playwright-tests `
 # Playwright E2E Tests — Build, Run & Maintain
 
 Create, run, debug, and fix Playwright end-to-end tests for the Freelabel Nuxt 2 frontend.
@@ -35,11 +34,11 @@ Create, run, debug, and fix Playwright end-to-end tests for the Freelabel Nuxt 2
 
 | File | Purpose |
 |------|---------|
-| `/Users/AlexMayo/Sites/freelabel/playwright.config.ts` | Global config (timeouts, projects, reporters) |
-| `/Users/AlexMayo/Sites/freelabel/tests/e2e/` | All test spec files |
-| `/Users/AlexMayo/Sites/freelabel/tests/e2e/helpers/` | Shared helpers (auth, page objects, providers) |
-| `/Users/AlexMayo/Sites/freelabel/test-results/screenshots/` | Test screenshots |
-| `/Users/AlexMayo/Sites/freelabel/playwright-report/` | HTML report output |
+| `<project-root>/playwright.config.ts` | Global config (timeouts, projects, reporters) |
+| `<project-root>/tests/e2e/` | All test spec files |
+| `<project-root>/tests/e2e/helpers/` | Shared helpers (auth, page objects, providers) |
+| `<project-root>/test-results/screenshots/` | Test screenshots |
+| `<project-root>/playwright-report/` | HTML report output |
 
 ### Config Summary
 
@@ -65,7 +64,7 @@ HEYIRIS_TOKEN=ca54cd87...            # Auth token for logged-in tests
 ### Run Commands
 
 ```bash
-# From project root (/Users/AlexMayo/Sites/freelabel)
+# From project root (<project-root>)
 npx playwright test tests/e2e/signup.spec.ts              # Run one test
 npx playwright test tests/e2e/signup.spec.ts --headed     # With browser visible
 npx playwright test tests/e2e/signup.spec.ts --debug      # Debug inspector
@@ -503,7 +502,7 @@ Report the pass/fail count and any error summaries.
 
 ## Important Notes
 
-- **Always run from project root**: `/Users/AlexMayo/Sites/freelabel`
+- **Always run from project root**: `<project-root>`
 - **Never create real accounts** in tests — always mock the registration API
 - **Never call real payment APIs** — mock Stripe checkout responses
 - **Screenshots are cheap** — take them at every major step for debugging

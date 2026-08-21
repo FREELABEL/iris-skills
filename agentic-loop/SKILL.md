@@ -3,7 +3,6 @@ name: agentic-loop
 description: Loop engineering reference — run one self-prompting agentic-loop cycle (orchestrator → discover → plan → fan-out specialists → verify against goal → synthesize → write memory), then optionally wire the weekly schedule. Reproduces the Builder/Scout/Growth demo and generalizes to any goal.
 ---
 
-> Run this playbook: `iris playbook run agentic-loop `
 > Steps: plan → build → scout → growth → verify → synthesize → write-memory → schedule → summary
 # Agentic Loop (loop engineering)
 
